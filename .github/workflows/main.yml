@@ -1,12 +1,5 @@
 # on:定义了触发类型，当push了main分支时触发
 on: [push]
-env:
-  GIT_USER: chaoxiaoshu-mx
-  GIT_EMAIL: lekotrichia@163.com
-  THEME_REPO: chaoxiaoshu-mx/vue3-ts
-  THEME_BRANCH: main
-  DEPLOY_REPO: git@github.com:chaoxiaoshu-mx/vue3-ts.git
-  DEPLOY_BRANCH: main
 
 # 执行的任务
 jobs:
@@ -18,11 +11,11 @@ jobs:
     - uses: actions/setup-node@v3   # 安装nodejs
       with:
         node-version: 18
-    - run: npm install
-    - run: npm run crowdin:sync
-    - run: date > generated.txt
-    - run: git config user.name github-actions
-    - run: git config user.email github-actions@github.com
-    - run: git add .
-    - run: git commit -m "generated"
-    - run: git push
+    - run: |
+      npm install
+      npm run crowdin:sync
+      git config user.name github-actions
+      git config user.email github-actions@github.com
+      git add .
+      git commit -m "generated"
+      git push
