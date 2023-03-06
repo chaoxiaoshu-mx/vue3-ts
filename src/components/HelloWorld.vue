@@ -1,3 +1,11 @@
+<!--
+ * @Author: chaoxiaoshu-mx leukotrichia@163.com
+ * @Date: 2023-03-05 18:42:45
+ * @LastEditors: chaoxiaoshu-mx leukotrichia@163.com
+ * @LastEditTime: 2023-03-06 14:46:43
+ * @FilePath: \my-vue-app\src\components\HelloWorld.vue
+ * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+-->
 <script setup lang="ts">
 import { ref } from 'vue'
 
@@ -10,9 +18,9 @@ const count = ref(0)
   <h1>{{ msg }}</h1>
 
   <div class="card">
-    <button type="button" @click="count++">count is {{ count }}</button>
+    <button type="button" @click="count++">次数</button>
     <p>
-      Edit
+      编辑
       <code>components/HelloWorld.vue</code> to test HMR
     </p>
   </div>
