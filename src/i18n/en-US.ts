@@ -1,6 +1,6 @@
 export default {
   "hello": {
-    "count": "count",
+    "count": "count1",
     "edit": "edit"
   }
 };
