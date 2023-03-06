@@ -13,8 +13,8 @@ jobs:
     - run: npm install
     - run: npm run crowdin:sync
     - run: date > generated.txt
-    - run: git config user.name chaoxiaoshu-mx
-    - run: git config user.email leukotrichia@163.com
+    - run: git config user.name github-actions
+    - run: git config user.email github-actions@github.com
     - run: git add .
     - run: git commit -m "generated"
     - run: git push
