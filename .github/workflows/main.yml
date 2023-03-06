@@ -6,7 +6,7 @@ jobs:
     name: deploy to staging
     runs-on: ubuntu-latest     # 配置默认系统，github会在这个系统中执行任务，这是一个独立的服务器
     steps:    # 执行步骤
-    - uses: actions/checkout@v2   # 克隆当前仓库
+    - uses: actions/checkout@v3   # 克隆当前仓库
     - uses: actions/setup-node@v3   # 安装nodejs
       with:
         node-version: 18
