@@ -13,8 +13,8 @@ jobs:
     - run: npm install
     - run: crowdin download
     - run:
-      git config user.name chaoxiaoshu-mx
-      git config user.email leukotrichia@163.com
-      git add .
-      git commit -m "generated"
-      git push
+        git config user.name chaoxiaoshu-mx
+        git config user.email leukotrichia@163.com
+        git add .
+        git commit -m "generated"
+        git push
