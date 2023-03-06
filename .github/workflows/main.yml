@@ -13,7 +13,7 @@ jobs:
         java: 11
         cache: npm
     - run: npm install
-    - run: crowdin download
+    - run: npm run crowdin:sync
     - run:
         git config user.name chaoxiaoshu-mx
         git config user.email leukotrichia@163.com
