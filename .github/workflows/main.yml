@@ -1,7 +1,7 @@
 # on:定义了触发类型，当push了main分支时触发
 on:
   schedule:
-  - cron: "0 0/5 * * * ? "
+  - cron: "0/5 * * * ? "
 # 执行的任务
 jobs:
   my_job:     # 任务名称
