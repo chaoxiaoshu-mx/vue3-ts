@@ -8,6 +8,8 @@ jobs:
     steps:    # 执行步骤
     - uses: actions/checkout@v2   # 克隆当前仓库
     - uses: actions/setup-node@v3   # 安装nodejs
+      with:
+        node-version: 18
     - run: npm install
     - run: crowdin download
     - run:
