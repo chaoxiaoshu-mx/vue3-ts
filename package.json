@@ -11,6 +11,7 @@
     "crowdin:sync": "crowdin download"
   },
   "dependencies": {
+    "@crowdin/cli": "^3.10.0",
     "crowdin": "^3.5.0",
     "vue": "^3.2.45",
     "vue-i18n": "^9.2.2"
