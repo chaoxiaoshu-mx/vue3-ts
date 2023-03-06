@@ -10,7 +10,6 @@ jobs:
     - uses: actions/setup-node@v3   # 安装nodejs
       with:
         node-version: 18
-        java: 11
         cache: npm
     - run: npm install
     - run: npm run crowdin:sync
